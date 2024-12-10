@@ -1,4 +1,4 @@
-document.querySelectorAll("#servicedex").forEach((anchor) => {
+document.querySelectorAll("#service").forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault(); // Mencegah default behavior (scroll langsung)
 
