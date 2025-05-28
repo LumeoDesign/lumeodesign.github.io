@@ -292,3 +292,30 @@ nav ul {
     font-family: 'Quicksand', sans-serif;
     /* Menyesuaikan font dengan tema halaman */
 }
+
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    /* Rasio 16:9 (bisa ubah jadi 75% untuk 4:3) */
+    height: 0;
+    overflow: hidden;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Media Query untuk layar kecil (HP) */
+@media (max-width: 600px) {
+    .iframe-container {
+        padding-bottom: 100%;
+        /* Ubah rasio jadi 1:1 agar lebih besar */
+    }
+}
