@@ -24,6 +24,19 @@ nav ul {
     color: white;
 }
 
+.hero-section {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ini memastikan gambar tetap terjaga proporsinya */
+}
 
 .hero-text {
     position: absolute;
